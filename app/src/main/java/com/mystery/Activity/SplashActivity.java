@@ -32,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
                 if (SharedPreferencesUtil.getIsLogIn(SplashActivity.this)) {
                     ARouter.getInstance().build(BaseUrl.ACTIVITY_URL_LUNCH)
                             .withOptionsCompat(ActivityOptionsCompat
-                                    .makeSceneTransitionAnimation(SplashActivity.this, lunch_icon_iv, "openLogin"))
+                                    .makeSceneTransitionAnimation(SplashActivity.this, lunch_icon_iv, "openLunch"))
                             .navigation(SplashActivity.this);
                     finish();
                 } else {

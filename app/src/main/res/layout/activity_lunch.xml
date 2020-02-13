@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/login_background"
+    android:background="@mipmap/lunch_background"
     tools:context=".Activity.LunchActivity"
     tools:ignore="ContentDescription,UnusedAttribute">
 
     <Button
         android:id="@+id/login_btn"
+        android:onClick="openLogin"
+        android:transitionName="openLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -66,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher_foreground"
-        android:transitionName="openLogin"
+        android:transitionName="openLunch"
         app:layout_constraintBottom_toBottomOf="@+id/made_in_mystery_tv"
         app:layout_constraintStart_toEndOf="@+id/made_in_mystery_tv"
         app:layout_constraintTop_toTopOf="@+id/made_in_mystery_tv" />

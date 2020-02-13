@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/lunch_icon_iv"
-        android:transitionName="openLogin"
+        android:transitionName="openLunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher_foreground"

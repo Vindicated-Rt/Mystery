@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Mystery</string>
     <string name="made_in_mystery">玄机工作室出品</string>
+    <string name="area_code_china">+86</string>
     <string name="login_text">登录</string>
     <string name="or_text">或</string>
     <string name="register_text">注册</string>
+    <string name="forget_password_text">忘记密码</string>
+    <string name="phone_number_text">手机号</string>
+    <string name="get_login_code">获取验证码</string>
+    <string name="email_login_text">邮箱登录</string>
 </resources>
