@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mystery</string>
+    <string name="made_in_mystery">玄机工作室出品</string>
+    <string name="login_text">登录</string>
+    <string name="or_text">或</string>
+    <string name="register_text">注册</string>
 </resources>
