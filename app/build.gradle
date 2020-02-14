@@ -27,7 +27,7 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 }

@@ -1,156 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/login_background"
-    tools:context=".Activity.LogInActivity"
-    tools:ignore="ContentDescription,UnusedAttribute">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:onClick="closeLogin"
-        android:id="@+id/back_lunch_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-    <Button
-        android:id="@+id/forget_btn"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/ripple_btn_background_black"
-        android:gravity="center"
-        android:text="@string/forget_password_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/white"
-        android:transitionName="openLogin"
-        app:layout_constraintBottom_toBottomOf="@+id/back_lunch_iv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/back_lunch_iv" />
+        <variable
+            name="login"
+            type="com.mystery.model.LoginModel" />
+    </data>
 
-    <TextView
-        android:id="@+id/login_title_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/login_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="64sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_lunch_iv" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_background"
+        tools:context=".activity.LogInActivity"
+        tools:ignore="ContentDescription,UnusedAttribute">
 
-    <TextView
-        android:id="@+id/phone_number_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/phone_number_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_title_tv" />
+        <ImageView
+            android:id="@+id/back_lunch_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:onClick="closeLogin"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/area_code_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:background="@drawable/ripple_btn_background_black"
-        android:gravity="center"
-        android:text="@string/area_code_china"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/phone_number_et"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/phone_number_et" />
+        <Button
+            android:id="@+id/forget_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/ripple_btn_background_black"
+            android:gravity="center"
+            android:text="@string/forget_password_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:transitionName="openLogin"
+            app:layout_constraintBottom_toBottomOf="@+id/back_lunch_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back_lunch_iv" />
 
-    <EditText
-        android:id="@+id/phone_number_et"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/area_code_btn"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number_tv"
-        tools:ignore="LabelFor,TextFields" />
+        <TextView
+            android:id="@+id/login_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/login_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="64sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_lunch_iv" />
 
-    <Button
-        android:id="@+id/send_login_message_btn"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/ripple_btn_background_black"
-        android:text="@string/get_login_code"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number_et" />
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@{login.usernameText}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_title_tv" />
 
-    <EditText
-        android:id="@+id/login_code_et"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/send_login_message_btn"
-        app:layout_constraintEnd_toStartOf="@+id/send_login_message_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/send_login_message_btn"
-        tools:ignore="LabelFor,TextFields" />
+        <Button
+            android:id="@+id/area_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/ripple_btn_background_black"
+            android:gravity="center"
+            android:text="@string/area_code_china"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/username_et"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/username_et"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/login_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:src="@drawable/ic_forward"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/send_login_message_btn" />
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/area_code_btn"
+            app:layout_constraintTop_toBottomOf="@+id/username_tv"
+            tools:ignore="LabelFor,TextFields" />
 
-    <Button
-        android:id="@+id/email_login_btn"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:background="@drawable/ripple_btn_background_black"
-        android:gravity="center"
-        android:text="@string/email_login_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/login_iv"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_iv" />
+        <TextView
+            android:id="@+id/password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@{login.passwordText}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_et" />
 
+        <Button
+            android:id="@+id/send_login_message_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/ripple_btn_background_black"
+            android:text="@string/get_login_code"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/password_et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/password_et" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/email_login_btn"
+            app:layout_constraintEnd_toStartOf="@+id/send_login_message_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_tv"
+            tools:ignore="LabelFor,TextFields" />
+
+        <ImageView
+            android:id="@+id/login_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_forward"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_et" />
+
+        <Button
+            android:id="@+id/email_login_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/ripple_btn_background_black"
+            android:gravity="center"
+            android:onClick="@{(v)->login.changeLoginMode()}"
+            android:text="@{login.loginModeText}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/login_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/login_iv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

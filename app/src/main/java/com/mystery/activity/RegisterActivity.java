@@ -1,11 +1,11 @@
-package com.mystery.Activity;
+package com.mystery.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.mystery.Base.BaseUrl;
+import com.mystery.base.BaseUrl;
 import com.mystery.R;
 
 @Route(path = BaseUrl.ACTIVITY_URL_REGISTER)

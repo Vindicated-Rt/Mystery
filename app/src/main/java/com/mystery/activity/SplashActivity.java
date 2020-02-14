@@ -1,4 +1,4 @@
-package com.mystery.Activity;
+package com.mystery.activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,9 +6,9 @@ import android.widget.ImageView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.mystery.Base.BaseUrl;
+import com.mystery.base.BaseUrl;
 import com.mystery.R;
-import com.mystery.Util.SharedPreferencesUtil;
+import com.mystery.util.SharedPreferencesUtil;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;

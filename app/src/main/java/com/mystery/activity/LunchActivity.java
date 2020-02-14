@@ -1,15 +1,14 @@
-package com.mystery.Activity;
+package com.mystery.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.mystery.Base.BaseUrl;
+import com.mystery.base.BaseUrl;
 import com.mystery.R;
 
 @Route(path = BaseUrl.ACTIVITY_URL_LUNCH)

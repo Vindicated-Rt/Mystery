@@ -3,18 +3,18 @@
     package="com.mystery">
 
     <application
-        android:name=".Base.BaseApplication"
+        android:name=".base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Activity.LogInActivity"></activity>
-        <activity android:name=".Activity.HomeActivity" ></activity>
-        <activity android:name=".Activity.RegisterActivity" ></activity>
-        <activity android:name=".Activity.LunchActivity" ></activity>
-        <activity android:name=".Activity.SplashActivity">
+        <activity android:name=".activity.LogInActivity"></activity>
+        <activity android:name=".activity.HomeActivity" ></activity>
+        <activity android:name=".activity.RegisterActivity" ></activity>
+        <activity android:name=".activity.LunchActivity" ></activity>
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
