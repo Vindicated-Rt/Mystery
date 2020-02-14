@@ -32,6 +32,7 @@ public class LogInActivity extends AppCompatActivity {
         initView();
     }
 
+    /*返回启动界面*/
     public void closeLogin(View view) {
         ARouter.getInstance().build(BaseUrl.ACTIVITY_URL_LUNCH)
                 .withOptionsCompat(ActivityOptionsCompat
