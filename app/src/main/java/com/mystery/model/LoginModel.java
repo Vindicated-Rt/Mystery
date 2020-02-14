@@ -69,7 +69,7 @@ public class LoginModel extends BaseObservable {
         } else if (loginMode == emailMode) {
             usernameText = mContext.getString(R.string.email_text);
             passwordText = mContext.getString(R.string.password_text);
-            loginModeText = mContext.getString(R.string.phone_code_text);
+            loginModeText = mContext.getString(R.string.phone_login_text);
             area_code_btn.setVisibility(View.GONE);
             send_login_message_btn.setVisibility(View.GONE);
         }

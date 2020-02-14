@@ -140,7 +140,6 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:importantForAutofill="no"
-            android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/email_login_btn"
             app:layout_constraintEnd_toStartOf="@+id/send_login_message_btn"
             app:layout_constraintStart_toStartOf="parent"

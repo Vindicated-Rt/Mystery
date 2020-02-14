@@ -27,4 +27,11 @@ public class LunchActivity extends AppCompatActivity {
                         .makeSceneTransitionAnimation(LunchActivity.this, view, "openLogin"))
                 .navigation(LunchActivity.this);
     }
+
+    public void openRegister(View view) {
+        ARouter.getInstance().build(BaseUrl.ACTIVITY_URL_REGISTER)
+                .withOptionsCompat(ActivityOptionsCompat
+                        .makeSceneTransitionAnimation(LunchActivity.this, view, "openRegister"))
+                .navigation(LunchActivity.this);
+    }
 }
