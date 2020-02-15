@@ -8,8 +8,7 @@ import android.widget.Button;
 import com.mystery.R;
 
 import androidx.databinding.BaseObservable;
-import androidx.databinding.Bindable;
-import androidx.databinding.library.baseAdapters.BR;
+import androidx.databinding.ObservableField;
 
 /**
  * Created by Vindicated-Rt
@@ -22,9 +21,9 @@ public class LoginModel extends BaseObservable {
     private static final int phoneMode = 1;
 
     private Context mContext;
-    private String usernameText;
-    private String passwordText;
-    private String loginModeText;
+    private ObservableField<String> usernameText = new ObservableField<>();
+    private ObservableField<String> passwordText = new ObservableField<>();
+    private ObservableField<String> loginModeText = new ObservableField<>();
     private int loginMode;
     private Button area_code_btn, send_login_message_btn;
 
@@ -37,18 +36,15 @@ public class LoginModel extends BaseObservable {
         setLoginText();
     }
 
-    @Bindable
-    public String getUsernameText() {
+    public ObservableField<String> getUsernameText() {
         return usernameText;
     }
 
-    @Bindable
-    public String getPasswordText() {
+    public ObservableField<String> getPasswordText() {
         return passwordText;
     }
 
-    @Bindable
-    public String getLoginModeText() {
+    public ObservableField<String> getLoginModeText() {
         return loginModeText;
     }
 
@@ -61,22 +57,18 @@ public class LoginModel extends BaseObservable {
     /*设置登录界面文本*/
     private void setLoginText() {
         if (loginMode == phoneMode) {
-            usernameText = mContext.getString(R.string.phone_number_text);
-            passwordText = mContext.getString(R.string.phone_code_text);
-            loginModeText = mContext.getString(R.string.email_login_text);
+            usernameText.set(mContext.getString(R.string.phone_number_text));
+            passwordText.set(mContext.getString(R.string.phone_code_text));
+            loginModeText.set(mContext.getString(R.string.email_login_text));
             area_code_btn.setVisibility(View.VISIBLE);
             send_login_message_btn.setVisibility(View.VISIBLE);
         } else if (loginMode == emailMode) {
-            usernameText = mContext.getString(R.string.email_text);
-            passwordText = mContext.getString(R.string.password_text);
-            loginModeText = mContext.getString(R.string.phone_login_text);
+            usernameText.set(mContext.getString(R.string.email_text));
+            passwordText.set(mContext.getString(R.string.password_text));
+            loginModeText.set(mContext.getString(R.string.phone_login_text));
             area_code_btn.setVisibility(View.GONE);
             send_login_message_btn.setVisibility(View.GONE);
         }
-        notifyPropertyChanged(BR.passwordText);
-        notifyPropertyChanged(BR.usernameText);
-        notifyPropertyChanged(BR.loginModeText);
     }
-
 
 }

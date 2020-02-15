@@ -6,7 +6,6 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -20,8 +19,6 @@ public class LogInActivity extends AppCompatActivity {
 
     private LoginModel loginModel;
     private ActivityLoginBinding loginBinding;
-    private Button areaCodeBtn;
-    private Button sendLoginMessageBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +35,7 @@ public class LogInActivity extends AppCompatActivity {
 
     /*初识化视图*/
     public void initView() {
-        areaCodeBtn = findViewById(R.id.area_code_btn);
-        sendLoginMessageBtn = findViewById(R.id.send_login_message_btn);
-        loginModel = new LoginModel(this,areaCodeBtn,sendLoginMessageBtn);
+        loginModel = new LoginModel(this,loginBinding.areaCodeBtn,loginBinding.sendLoginMessageBtn);
         loginBinding.setLogin(loginModel);
     }
 
