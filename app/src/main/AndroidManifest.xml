@@ -10,14 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.LogInActivity"
-            android:launchMode="singleTask"></activity>
-        <activity android:name=".activity.HomeActivity"
-            android:launchMode="singleTask"></activity>
-        <activity android:name=".activity.RegisterActivity"
-            android:launchMode="singleTask"></activity>
-        <activity android:name=".activity.LunchActivity"
-            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".activity.LogInActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.LunchActivity"
+            android:launchMode="singleTask" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
