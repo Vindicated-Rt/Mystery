@@ -9,7 +9,6 @@ import android.widget.Button;
 
 import com.mystery.R;
 
-import androidx.databinding.BaseObservable;
 import androidx.databinding.ObservableField;
 
 /**
@@ -17,7 +16,7 @@ import androidx.databinding.ObservableField;
  * 2020-02-14 16:41
  */
 
-public class LoginModel extends BaseObservable {
+public class LoginModel {
 
     private static final int emailMode = 0;
     private static final int phoneMode = 1;

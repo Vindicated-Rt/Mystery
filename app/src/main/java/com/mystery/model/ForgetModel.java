@@ -6,7 +6,6 @@ import android.text.TextWatcher;
 
 import com.mystery.R;
 
-import androidx.databinding.BaseObservable;
 import androidx.databinding.ObservableField;
 
 /**
@@ -14,7 +13,7 @@ import androidx.databinding.ObservableField;
  * 2020-02-15 12:08
  */
 
-public class ForgetModel extends BaseObservable {
+public class ForgetModel {
 
     private Context mContext;
     private ObservableField<String> forgetTitle = new ObservableField<>();
@@ -23,7 +22,7 @@ public class ForgetModel extends BaseObservable {
     private String phone_code;
     private String remake_password;
 
-    public ForgetModel (Context context){
+    public ForgetModel(Context context) {
         this.mContext = context;
         forgetTitle.set(mContext.getString(R.string.forget_password_text));
         forgetRemind.set(mContext.getString(R.string.type_forget_phone));
@@ -55,24 +54,24 @@ public class ForgetModel extends BaseObservable {
     };
 
     /*重制继续按钮*/
-    public void remake(){
-        if (checkPhone()){
+    public void remake() {
+        if (checkPhone()) {
             forgetTitle.set(mContext.getString(R.string.type_phone_code));
-            forgetRemind.set("我们向 "+phone_number+" 发送了一个短信验证码");
-            if (checkCode()){
+            forgetRemind.set("我们向 " + phone_number + " 发送了一个短信验证码");
+            if (checkCode()) {
                 forgetTitle.set(mContext.getString(R.string.type_password));
-                forgetRemind.set("请输入 "+phone_number+" 的新密码");
+                forgetRemind.set("请输入 " + phone_number + " 的新密码");
             }
         }
     }
 
     /*检测电话号码*/
-    private boolean checkPhone(){
+    private boolean checkPhone() {
         return true;
     }
 
     /*检测电话号码*/
-    private boolean checkCode(){
+    private boolean checkCode() {
         return false;
     }
 }
