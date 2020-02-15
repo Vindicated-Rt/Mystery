@@ -13,4 +13,7 @@
     <string name="get_login_code">获取验证码</string>
     <string name="email_login_text">邮箱登录</string>
     <string name="phone_login_text">手机登录</string>
+    <string name="type_forget_phone">输入电话号码</string>
+    <string name="type_phone_code">输入短信验证码</string>
+    <string name="type_password">输入新的密码</string>
 </resources>
