@@ -10,6 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.ForgetActivity"
+            android:launchMode="singleTask"></activity>
         <activity
             android:name=".activity.LogInActivity"
             android:launchMode="singleTask" />

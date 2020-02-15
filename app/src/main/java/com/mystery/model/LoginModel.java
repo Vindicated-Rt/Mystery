@@ -77,4 +77,6 @@ public class LoginModel extends BaseObservable {
         notifyPropertyChanged(BR.usernameText);
         notifyPropertyChanged(BR.loginModeText);
     }
+
+
 }
