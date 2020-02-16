@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.RegisterActivity"
     tools:ignore="ContentDescription,UnusedAttribute,LabelFor,TextFields">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/register_background"
-        tools:context=".activity.RegisterActivity">
+        android:background="@mipmap/register_background">
 
         <ImageView
             android:id="@+id/close_register_iv"
