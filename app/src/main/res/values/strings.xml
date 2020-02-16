@@ -6,16 +6,18 @@
     <string name="or_text">或</string>
     <string name="register_text">注册</string>
     <string name="forget_password_text">忘记密码</string>
-    <string name="phone_number_text">手机号</string>
+    <string name="phone_number_text">手机号码</string>
     <string name="phone_code_text">验证码</string>
     <string name="email_text">邮箱地址</string>
-    <string name="password_text">密码</string>
+    <string name="password_text">登录密码</string>
+    <string name="password_confirm_text">确认密码</string>
     <string name="get_login_code">获取验证码</string>
     <string name="email_login_text">邮箱登录</string>
     <string name="phone_login_text">手机登录</string>
     <string name="type_forget_phone">输入电话号码</string>
     <string name="type_phone_code">输入短信验证码</string>
     <string name="type_password">输入新的密码</string>
+    <string name="register_key_text">注册码</string>
 
 
     <string name="user_info_hint">\t输入内容</string>
