@@ -16,4 +16,18 @@
     <string name="type_forget_phone">输入电话号码</string>
     <string name="type_phone_code">输入短信验证码</string>
     <string name="type_password">输入新的密码</string>
+
+
+    <string name="userinfo_hint">\t输入内容</string>
+    <string name="userinfo_occupation">职位</string>
+    <string name="userinfo_old">年龄</string>
+    <string name="userinfo_grade">年级</string>
+    <string name="userinfo_email">邮箱</string>
+    <string name="userinfo_blog">博客</string>
+    <string name="userinfo_job">岗位</string>
+    <string name="userinfo_jobHint">\t工作岗位</string>
+    <string name="userinfo_experience">经历</string>
+
+
+
 </resources>
