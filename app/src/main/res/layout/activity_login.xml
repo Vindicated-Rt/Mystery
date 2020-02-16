@@ -19,7 +19,7 @@
         android:background="@mipmap/login_background">
 
         <ImageView
-            android:id="@+id/back_lunch_iv"
+            android:id="@+id/close_login_iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -43,9 +43,9 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/white"
             android:transitionName="openForget"
-            app:layout_constraintBottom_toBottomOf="@+id/back_lunch_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/close_login_iv"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/back_lunch_iv" />
+            app:layout_constraintTop_toTopOf="@+id/close_login_iv" />
 
         <TextView
             android:id="@+id/login_title_tv"
@@ -58,7 +58,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/back_lunch_iv" />
+            app:layout_constraintTop_toBottomOf="@+id/close_login_iv" />
 
         <TextView
             android:id="@+id/username_tv"

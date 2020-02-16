@@ -19,7 +19,7 @@
         android:background="@mipmap/forget_background">
 
         <ImageView
-            android:id="@+id/back_login_iv"
+            android:id="@+id/close_forget_iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -41,7 +41,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/back_login_iv" />
+            app:layout_constraintTop_toBottomOf="@+id/close_forget_iv" />
 
         <TextView
             android:id="@+id/forget_remind_tv"
