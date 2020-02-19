@@ -14,7 +14,7 @@ public class UserInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_user_info);
-        findViewById(R.id.userinfo_return).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.returnBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
