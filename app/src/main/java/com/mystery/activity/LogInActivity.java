@@ -6,7 +6,6 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -14,18 +13,20 @@ import com.mystery.base.BaseUrl;
 import com.mystery.R;
 import com.mystery.databinding.ActivityLoginBinding;
 import com.mystery.model.LoginModel;
+import com.mystery.model.LoginViewModel;
 
 @Route(path = BaseUrl.ACTIVITY_URL_LOGIN)
 public class LogInActivity extends AppCompatActivity {
 
     private LoginModel loginModel;
+    private LoginViewModel loginViewModel;
     private ActivityLoginBinding loginBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loginBinding = DataBindingUtil
-                .setContentView(LogInActivity.this,R.layout.activity_login);
+                .setContentView(LogInActivity.this, R.layout.activity_login);
         initView();
     }
 
@@ -36,8 +37,11 @@ public class LogInActivity extends AppCompatActivity {
 
     /*初识化视图*/
     public void initView() {
-        loginModel = new LoginModel(this,loginBinding.areaCodeBtn,loginBinding.sendLoginMessageBtn);
+        loginModel = new LoginModel();
+        loginViewModel = new LoginViewModel(this, loginModel
+                , loginBinding.areaCodeBtn, loginBinding.sendLoginMessageBtn);
         loginBinding.setLogin(loginModel);
+        loginBinding.setLoginView(loginViewModel);
     }
 
     /*启动忘记密码界面*/

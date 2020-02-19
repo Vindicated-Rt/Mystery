@@ -18,7 +18,7 @@
     <string name="type_phone_code">输入短信验证码</string>
     <string name="type_password">输入新的密码</string>
     <string name="register_key_text">注册码</string>
-    <string name="user_info_hint">输入内容</string>
+    <string name="user_info_hint">\t输入内容</string>
     <string name="user_info_occupation">职位</string>
     <string name="user_info_old">年龄</string>
     <string name="user_info_grade">年级</string>

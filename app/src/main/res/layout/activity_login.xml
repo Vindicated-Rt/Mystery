@@ -11,6 +11,10 @@
             name="login"
             type="com.mystery.model.LoginModel" />
 
+        <variable
+            name="loginView"
+            type="com.mystery.model.LoginViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -101,7 +105,7 @@
             android:importantForAutofill="no"
             android:inputType="number"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:addTextChangedListener="@{login.usernameWatcher}"
+            app:addTextChangedListener="@{loginView.usernameWatcher}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/area_code_btn"
             app:layout_constraintTop_toBottomOf="@+id/username_tv" />
@@ -142,7 +146,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:importantForAutofill="no"
-            app:addTextChangedListener="@{login.passwordWatcher}"
+            app:addTextChangedListener="@{loginView.passwordWatcher}"
             app:layout_constraintBottom_toTopOf="@+id/email_login_btn"
             app:layout_constraintEnd_toStartOf="@+id/send_login_message_btn"
             app:layout_constraintStart_toStartOf="parent"
@@ -167,7 +171,7 @@
             android:layout_marginLeft="32dp"
             android:background="@drawable/ripple_btn_background_black"
             android:gravity="center"
-            android:onClick="@{(v)->login.changeLoginMode()}"
+            android:onClick="@{(v)->loginView.changeLoginMode()}"
             android:text="@{login.loginModeText}"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/white"

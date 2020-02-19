@@ -11,6 +11,10 @@
             name="forget"
             type="com.mystery.model.ForgetModel" />
 
+        <variable
+            name="forgetView"
+            type="com.mystery.model.ForgetViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,7 +90,7 @@
             android:inputType="number"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent"
-            app:addTextChangedListener="@{forget.remakeWatcher}"
+            app:addTextChangedListener="@{forgetView.remakeWatcher}"
             app:layout_constraintStart_toEndOf="@+id/forget_area_code_btn"
             app:layout_constraintTop_toBottomOf="@+id/forget_remind_tv" />
 
@@ -97,7 +101,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:onClick="@{(v)->forget.remake()}"
+            android:onClick="@{(v)->forgetView.remake()}"
             android:src="@drawable/ic_forward"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/remake_et" />
