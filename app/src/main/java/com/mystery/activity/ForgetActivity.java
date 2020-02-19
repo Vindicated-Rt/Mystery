@@ -11,12 +11,14 @@ import com.mystery.R;
 import com.mystery.base.BaseUrl;
 import com.mystery.databinding.ActivityForgetBinding;
 import com.mystery.model.ForgetModel;
+import com.mystery.model.ForgetViewModel;
 
 @Route(path = BaseUrl.ACTIVITY_URL_FORGET)
 public class ForgetActivity extends AppCompatActivity {
 
     private ActivityForgetBinding forgetBinding;
     private ForgetModel forgetModel;
+    private ForgetViewModel forgetViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +28,12 @@ public class ForgetActivity extends AppCompatActivity {
         initView();
     }
 
+    /*初始化视图*/
     private void initView(){
         forgetModel = new ForgetModel(this);
+        forgetViewModel = new ForgetViewModel(this,forgetModel,forgetBinding.forgetAreaCodeBtn);
         forgetBinding.setForget(forgetModel);
+        forgetBinding.setForgetView(forgetViewModel);
     }
 
     /*返回注册界面*/
