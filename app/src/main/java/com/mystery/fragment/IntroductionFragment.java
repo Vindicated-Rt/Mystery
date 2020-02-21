@@ -11,23 +11,23 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mystery.R;
-import com.mystery.databinding.FragmentBlogBinding;
+import com.mystery.databinding.FragmentIntroductionBinding;
 
-public class BlogFragment extends Fragment {
 
-    private FragmentBlogBinding blogBinding;
+public class IntroductionFragment extends Fragment {
 
-    public BlogFragment() {
-        // Required empty public constructor
+    private FragmentIntroductionBinding introductionBinding;
+
+    public IntroductionFragment() {
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        blogBinding = DataBindingUtil
-                .inflate(inflater,R.layout.fragment_blog,container,false);
-        return blogBinding.getRoot();
+        introductionBinding = DataBindingUtil.inflate(inflater
+                ,R.layout.fragment_introduction,container,false);
+        return introductionBinding.getRoot();
     }
 
 }
