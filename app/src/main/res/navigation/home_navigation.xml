@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/bottom_tab_home"
-        android:name="com.mystery.fragment.IntroductionFragment"
-        android:label="@string/introduction_text"
+        android:name="com.mystery.fragment.HomeFragment"
+        android:label="@string/home_text"
         tools:layout="@layout/fragment_introduction" />
 
     <fragment
