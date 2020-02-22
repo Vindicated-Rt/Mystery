@@ -50,4 +50,8 @@ dependencies {
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     //导航切换栏 UI库
     implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //阿里巴巴 viewpager库
+    implementation('com.alibaba.android:ultraviewpager:1.0.7.7@aar') {
+        transitive = true
+    }
 }

@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         initTopNavigation();
     }
 
-    /*初始化顶部导航*/
+    /*初始化顶部导航监听*/
     private void initTopNavigation(){
         homeBinding.homeTopNavigation.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
