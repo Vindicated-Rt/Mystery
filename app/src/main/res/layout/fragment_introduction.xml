@@ -15,7 +15,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@mipmap/intro_background">
 
         <com.tmall.ultraviewpager.UltraViewPager
             android:id="@+id/intro_vp"
@@ -24,15 +25,39 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:padding="30dp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:upv_autoscroll="2000"
-            app:upv_infiniteloop="true">
+            app:upv_infiniteloop="true" />
 
-        </com.tmall.ultraviewpager.UltraViewPager>
+        <androidx.appcompat.widget.SearchView
+            android:background="@color/silver"
+            android:id="@+id/member_sv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:iconifiedByDefault="false"
+            android:focusable="false"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intro_vp"
+            app:queryHint="@string/member_search" />
 
+        <ExpandableListView
+            android:id="@+id/member_lv"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/member_sv" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

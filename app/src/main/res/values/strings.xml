@@ -32,4 +32,5 @@
     <string name="blog_text">博客</string>
     <string name="user_text">我的</string>
     <string name="map_text">地图</string>
+    <string name="member_search">成员搜索</string>
 </resources>
