@@ -41,7 +41,7 @@ public class IntroViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         LinearLayout linearLayout = (LinearLayout)
-                LayoutInflater.from(container.getContext()).inflate(R.layout.layout_item,null);
+                LayoutInflater.from(container.getContext()).inflate(R.layout.layout_viewpager_item,null);
         ImageView imageView = linearLayout.findViewById(R.id.item_pager_iv);
         imageView.setBackgroundResource(viewId[position]);
         container.addView(linearLayout);

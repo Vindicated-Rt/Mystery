@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.mystery.R;
 import com.mystery.adapter.IntroViewPagerAdapter;
+import com.mystery.adapter.MemberListAdapter;
 import com.mystery.databinding.FragmentIntroductionBinding;
 import com.mystery.model.IntroductionModel;
 import com.tmall.ultraviewpager.UltraViewPager;
@@ -42,6 +43,7 @@ public class IntroductionFragment extends Fragment {
     private void initView() {
         introductionModel = new IntroductionModel();
         introductionBinding.setIntroduction(introductionModel);
+        introductionBinding.memberLv.setAdapter(new MemberListAdapter(getContext()));
         initViewPager();
     }
 
