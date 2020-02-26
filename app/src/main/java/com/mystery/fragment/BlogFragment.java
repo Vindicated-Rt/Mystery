@@ -27,7 +27,12 @@ public class BlogFragment extends Fragment {
                              Bundle savedInstanceState) {
         blogBinding = DataBindingUtil
                 .inflate(inflater,R.layout.fragment_blog,container,false);
+        initView();
         return blogBinding.getRoot();
+    }
+
+    private void initView(){
+
     }
 
 }
