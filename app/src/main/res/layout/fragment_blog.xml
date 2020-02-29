@@ -7,6 +7,7 @@
     <data/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@mipmap/blog_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -51,6 +52,11 @@
             app:queryHint="@string/blog_search" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:scrollbars="vertical"
+            android:id="@+id/blog_rv"
             app:layout_constraintTop_toBottomOf="@+id/blog_sv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
