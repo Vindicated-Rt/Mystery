@@ -2,14 +2,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".fragment.BlogFragment">
+    tools:context=".fragment.BlogFragment"
+    tools:ignore="UnusedAttribute">
 
-    <data/>
+    <data />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="@mipmap/blog_background"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@mipmap/blog_background">
 
         <com.flyco.tablayout.SegmentTabLayout
             android:id="@+id/blog_top_navigation"
@@ -44,6 +45,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@color/silver"
+            android:elevation="10dp"
             android:focusable="false"
             app:iconifiedByDefault="false"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,16 +54,16 @@
             app:queryHint="@string/blog_search" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/blog_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
             android:scrollbars="vertical"
-            android:id="@+id/blog_rv"
-            app:layout_constraintTop_toBottomOf="@+id/blog_sv"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blog_sv" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -26,6 +26,7 @@ import java.util.List;
 public class BlogFragment extends Fragment {
 
     private FragmentBlogBinding blogBinding;
+    private String[] tabData = {"全部", "我的"};
 
     public BlogFragment() {
         // Required empty public constructor
@@ -42,6 +43,7 @@ public class BlogFragment extends Fragment {
     }
 
     private void initView() {
+        blogBinding.blogTopNavigation.setTabData(tabData);
         blogBinding.blogRv.setLayoutManager(new LinearLayoutManager(getContext()));
         List<BlogModel> blogModels = new ArrayList<>();
         BlogAdapter blogAdapter = new BlogAdapter(getContext(), blogModels);
